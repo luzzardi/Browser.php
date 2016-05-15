@@ -1,5 +1,5 @@
 {
-    "name": "cbschuld/browser.php",
+    "name": "cbschuld/browser",
     "description": "",
     "version": "1.0.1",
     "keywords": ["browser", "user agent", "detection"],
@@ -13,6 +13,8 @@
         }
     ],
     "autoload": {
-        "files": ["lib/Browser.php"]
+        "psr-0": {
+            "browser\\BrowserBundle": ""
+        }
     }
 }

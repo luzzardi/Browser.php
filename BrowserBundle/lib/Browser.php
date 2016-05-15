@@ -1,5 +1,7 @@
 <?php
 
+namespace BrowserBundle\lib\Browser;
+
 /**
  * File: Browser.php
  * Author: Chris Schuld (http://chrisschuld.com/)
