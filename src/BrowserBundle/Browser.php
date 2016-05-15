@@ -1,6 +1,6 @@
 <?php
 
-namespace BrowserBundle\lib\Browser;
+namespace BrowserBundle;
 
 /**
  * File: Browser.php
