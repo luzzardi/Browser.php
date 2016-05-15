@@ -1,7 +1,4 @@
 <?php
-
-namespace BrowserBundle\Browser;
-
 /**
  * File: Browser.php
  * Author: Chris Schuld (http://chrisschuld.com/)
@@ -36,6 +33,8 @@ namespace BrowserBundle\Browser;
  * http://apptools.com/phptools/browser/
  *
  */
+
+namespace BrowserBundle\Browser;
 
 class Browser
 {
@@ -116,15 +115,17 @@ class Browser
 
     /**
      * Class constructor
+     * @param $userAgent
+     *
+     * @return mixed
      */
-    public function __construct($userAgent = "")
+    public function __construct($userAgent = false)
     {
         $this->reset();
-        if ($userAgent != "") {
-            $this->setUserAgent($userAgent);
-        } else {
-            $this->determine();
+        if (!$userAgent) {
+            return $this->setUserAgent($userAgent);
         }
+        $this->determine();
     }
 
     /**
